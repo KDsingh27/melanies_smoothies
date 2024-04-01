@@ -46,8 +46,8 @@ if time_to_insert:
     st.success('Your Smoothie is ordered!', icon="✅")
 
 import requests
-        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-        fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
 
 
